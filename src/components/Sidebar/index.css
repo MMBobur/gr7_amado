@@ -1,1 +1,4 @@
-/* Bu style yozish uchun */
+.Home:hover  .Home1{
+    visibility: visible;
+
+}
