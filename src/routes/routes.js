@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
 import Users from '../views/Users/List';
+import Checkout from '../views/Checkout';
 import Home from '../containers/Home';
 
 export const routes = [
@@ -9,6 +10,7 @@ export const routes = [
     children: [
       { index: true, element: <Home /> },
       { path: '/users', element: <Users /> },
+      { path: '/checks', element: <Checkout /> },
       { path: '*', element: <Navigate to='/' /> },
     ],
   },
