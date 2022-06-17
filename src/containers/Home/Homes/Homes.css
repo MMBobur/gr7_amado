@@ -1,0 +1,30 @@
+.box1:hover{
+    opacity: 1;
+    background: #131239;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.box2:hover{
+    opacity: 0;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.box3:hover{
+    opacity: 1;
+    background: #131239;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.box4:hover{
+    opacity: 0;
+    overflow: hidden;
+
+}
+
+
+
