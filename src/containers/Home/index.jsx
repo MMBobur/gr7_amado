@@ -1,10 +1,8 @@
 import React from 'react';
-import Sidebar from '../../components/Sidebar';
-import Content from '../../components/Content';
+import Shop from '../../components/shop/Shop';
 
 export default () => (
   <div>
-    <Sidebar />
-    <Content />
+    <Shop/>
   </div>
 );
