@@ -1,8 +1,11 @@
-import React from "react";
-import Product from "../../components/Product/index";
+
+import React from 'react';
+import Sidebar from '../../components/Sidebar';
+import Content from '../../components/Sidebar';
 
 export default () => (
   <div>
-    <Product />
+    <Sidebar />
+    <Content />
   </div>
 );
