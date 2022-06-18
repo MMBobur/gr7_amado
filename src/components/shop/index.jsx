@@ -26,7 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
   background: "none",
 }));
 
-const Shop = () => {
+export default  () => {
   const [age, setAge] = React.useState("");
   const [open, setOpen] = React.useState(false);
   const [age2, setAge2] = React.useState("");
@@ -460,4 +460,3 @@ const Shop = () => {
   );
 };
 
-export default Shop;

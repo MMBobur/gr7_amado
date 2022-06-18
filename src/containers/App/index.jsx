@@ -4,7 +4,7 @@ import { useRoutes } from 'react-router-dom';
 import { routes } from '../../routes/routes';
 import Sidebar from "../../components/Sidebar"
 import Grid from "@mui/material/Grid"
-
+import Footer from "../../components/Footer"
 export default () => {
   const content = useRoutes(routes);
   return <>
@@ -17,7 +17,7 @@ export default () => {
   <Grid item md={10}>
   {content}
   </Grid>
-
+    <Footer/>
   </Grid>
 
   </>;

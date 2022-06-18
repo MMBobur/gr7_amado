@@ -89,7 +89,7 @@ export default () => {
               className="Home1"
             ></Box>
             <Link
-              to="/shop"
+              to="/product"
               style={{
                 textDecoration: "none",
                 marginLeft: "15px",
@@ -116,7 +116,7 @@ export default () => {
               className="Home1"
             ></Box>
             <Link
-              to="/shop"
+              to="/card"
               style={{
                 textDecoration: "none",
                 marginLeft: "15px",
@@ -143,7 +143,7 @@ export default () => {
               className="Home1"
             ></Box>
             <Link
-              to="/shop"
+              to="/checkout"
               style={{
                 textDecoration: "none",
                 marginLeft: "15px",
