@@ -1,336 +1,66 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Box, Grid, Stack } from "@mui/material";
-import "./Homes.css"
-export default function Homes() {
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Homecompo from "../../../components/Homecompo"
+import Grid from '@mui/material/Grid';
+
+
+const data =[
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x1.jpg.pagespeed.ic.5ZA1VvUQdq.webp',
+    },
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x2.jpg.pagespeed.ic.a65WvD6Lfq.webp',
+    },
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x3.jpg.pagespeed.ic.ZkaNwNeAkh.webp',
+    },
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x5.jpg.pagespeed.ic.AjrZ_RWLlg.webp',
+    },
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x6.jpg.pagespeed.ic.IgZVpvJ9PH.webp',
+    },
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x4.jpg.pagespeed.ic.ulQ6gNkSAS.webp',
+    },
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x8.jpg.pagespeed.ic.AdKZHLNWPP.webp',
+    },
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x9.jpg.pagespeed.ic.BhFC9o0jid.webp',
+    },
+    {
+        img:'https://preview.colorlib.com/theme/amado/img/bg-img/x7.jpg.pagespeed.ic.o4cGGg_r1m.webp',
+    },
+]
+
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
+export default function BasicGrid() {
   return (
-    <>
-    <Grid
-      sx={{position:"absolute",display:"flex", mt: "2%" }}
-      // container
-    >
-      <Grid lg={4} md={4} sm={6} xs={12}>
-        <Box className="box3">
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "7%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box>
-            <Card  className="box4" sx={{ width: "100%" }}>
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="350"
-                image="img.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-      <Grid lg={4} md={4} sm={6} xs={12}>
-        <Box className="box3">
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "3%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box>
-            <Card className="box4" sx={{ width: "100%"}}>
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="450"
-                image="img1.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-      <Grid lg={4} md={4} sm={6} xs={12}>
-        <Box className="box1">
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "3%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box>
-            <Card className="box2" sx={{ width: "100%" }}>
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="300"
-                image="img2.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-    </Grid>
-    <Grid
-            sx={{position:"absolute",display:"flex", mt: "2%" }}
+    <Box sx={{ flexGrow: 1 }}>
+        <Homecompo/>
+      {/* <Grid container spacing={2}>
+          {data.map((x)=>{
+              return (
 
-    >
-
-
-
-    <Grid lg={4} md={4} sm={6} xs={12}
-    sx={{mt: "38%"}}
-    >
-        <Box className="box3" sx={{ width: "105%" }}>
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "3%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box>
-            <Card className="box4" 
-            >
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="300"
-                image="img3.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-    <Grid lg={4} md={4} sm={6} xs={12}
-    sx={{mt: "48%"}}
-    
-    >
-        <Box className="box3">
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "3%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box>
-            <Card className="box4" sx={{ width: "103%" }}>
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="300"
-                image="img4.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-    <Grid lg={4} md={4} sm={6} xs={12}
-    sx={{mt: "33%"}}
-    
-    >
-        <Box className="box3"sx={{ width: "100%",ml:"5%" }}>
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "3%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box className="box4"
-          sx={{width:"300px",ml:"5%"}}
-           >
-            <Card 
-            >
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="300"
-                image="img5.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-      </Grid>
-
-      
-    <Grid
-      sx={{position:"absolute",display:"flex", mt: "2%" }}
-     
-    >
-
-
-
-    <Grid lg={4} md={4} sm={6} xs={12}
-    sx={{mt: "69%"}}
-    >
-        <Box className="box3" sx={{ width: "100%" }}>
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "3%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box>
-            <Card className="box4" sx={{ width: "100%" }}>
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="370"
-                image="img6.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-    <Grid lg={4} md={4} sm={6} xs={12}
-    sx={{mt: "79%"}}
-    
-    >
-        <Box className="box3"sx={{ml:"5%"}}>
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "3%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box>
-            <Card className="box4" sx={{ width: "100%" }}>
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="300"
-                image="img7.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-    <Grid lg={4} md={4} sm={6} xs={12}
-    sx={{mt: "64%"}}
-    
-    >
-        <Box className="box3">
-          <Box
-            sx={{
-              position: "absolute",
-              width: "50px",
-              color: "#ff9100",
-              pt: "10px",
-              pl: "3%",
-            }}
-          >
-            <Stack style={{ fontWeight: "bold" }}>
-              <Typography variant="h3">___</Typography>
-            </Stack>
-            <Typography style={{ color: "blue" }}>$ 180</Typography>
-            <Typography style={{ color: "black", width: "200px" }} variant="h6">
-              Modern Chair
-            </Typography>
-          </Box>
-          <Box>
-            <Card className="box4" sx={{ width: "100%" }}>
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="440"
-                image="img8.png"
-              />
-            </Card>
-          </Box>
-        </Box>
-      </Grid>
-      </Grid>
-
-
-  </>
+                <Grid item xs={12} sm={12} md={6} lg={4}>
+                <Box>
+                    <img  style={{width:'100%'}} src={x.img} />
+                </Box>
+              </Grid>
+          )})}
+ 
+      </Grid> */}
+    </Box>
   );
 }

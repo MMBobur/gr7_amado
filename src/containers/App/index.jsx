@@ -17,8 +17,9 @@ export default () => {
   <Grid item md={10}>
   {content}
   </Grid>
-    <Footer/>
   </Grid>
+  
+    <Footer/>
 
   </>;
 };

@@ -347,7 +347,7 @@ function Checkout() {
                 </FormControl>
               </Box>
 
-            <Box pr='4%' mt='22%' sx={{display:'flex',justifyContent:'center'}}>
+            <Box pr='4%' mt='10%' sx={{display:'flex',justifyContent:'center'}}>
             <Button  sx={{width:'100%',backgroundColor:'#F8B510',border:'1px solid #F8B510',borderRadius:'0px',color:'white'}}>
                 Checkout
               </Button>
